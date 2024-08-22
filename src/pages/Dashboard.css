@@ -1,0 +1,42 @@
+.vd-box {
+  padding: 12px 18px;
+  background: #1c1d20;
+  /* stroke */
+
+  border: 1px solid #3b3c3d;
+  border-radius: 8px;
+}
+.vd-box4 {
+  padding: 24px 18px;
+  background: #141518;
+  /* stroke */
+
+  border: 1px solid #3b3c3d;
+  border-radius: 8px;
+}
+
+.vd-box2 {
+  padding: 12px 0;
+  background: #1c1d20;
+  /* stroke */
+
+  border: 1px solid #3b3c3d;
+  border-radius: 8px;
+}
+
+.vd-box3 {
+  padding: 0 18px;
+  background: #1c1d20;
+  /* stroke */
+
+  border: 1px solid #3b3c3d;
+  border-radius: 8px;
+}
+.vd-box5 {
+  padding: 0px;
+  background: #1c1d20;
+  /* stroke */
+
+  border: 1px solid #3b3c3d;
+  border-radius: 8px;
+}

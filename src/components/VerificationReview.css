@@ -1,0 +1,38 @@
+.review-id {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-id img {
+  height: 140px;
+  width: 210px;
+}
+
+.review-id p {
+  text-align: center;
+  font-size: 10px;
+}
+
+.review-selfie img {
+  height: 280px;
+  width: 410px;
+}
+
+.review-selfie {
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-flex-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .review-selfie img {
+    height: 200px;
+    width: 280px;
+  }
+}

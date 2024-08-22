@@ -1,0 +1,77 @@
+<form
+        method="POST"
+        id="myForm"
+        action="https://test.ipg-online.com/connect/gateway/processing"
+>
+    <input
+            type="hidden"
+            name="chargetotal"
+            value="59"
+    />
+    <input
+            type="hidden"
+            name="checkoutoption"
+            value="combinedpage"
+    />
+    <input
+            type="hidden"
+            name="currency"
+            value="484"
+    />
+    <input
+            type="hidden"
+            name="hash_algorithm"
+            value="HMACSHA256"
+    />
+    <input
+            type="hidden"
+            name="responseFailURL"
+            value="http://localhost:3001/handleFACResponse?orderNo=b12b81cc-f3ef-49d1-a273-9a9f43bb0ce8&source=fiserv"
+    />
+    <input
+            type="hidden"
+            name="responseSuccessURL"
+            value="http://localhost:3001/handleFACResponse?orderNo=b12b81cc-f3ef-49d1-a273-9a9f43bb0ce8&source=fiserv"
+    />
+    <input
+            type="hidden"
+            name="transactionNotificationURL"
+            value="https://webhook.site/2ff78085-d479-4709-8c7b-572c3337739c"
+    />
+    <input
+            type="hidden"
+            name="storename"
+            value="6239465290021"
+    />
+    <input
+            type="hidden"
+            name="timezone"
+            value="America/New_York"
+    />
+    <input
+            type="hidden"
+            name="txndatetime"
+            value="2024:01:17-12:41:22"
+    />
+    <input
+            type="hidden"
+            name="txntype"
+            value="sale"
+    />
+    <input
+            type="hidden"
+            name="hashExtended"
+            value="rEQq8LhQ5bmP957sOpsIys4T0kAoOqYB6ZxwbgpmURo="
+    />
+    <input type="hidden" name="oid" value="b12b81cc-f3ef-49d1-a273-9a9f43bb0ce8"/>
+    <input
+            type="hidden"
+            name="language"
+            value="en_US"
+    />
+    <input
+            type="submit"
+            value="Send Form"
+            className="btn btn-primary"
+    />
+</form>

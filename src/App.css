@@ -1,0 +1,488 @@
+/* COLORS */
+/* Primary/Blue */
+/* background: #008ffd; */
+
+/* Primary/Newtral Black */
+/* background: #141416; */
+
+/* white
+#fcfcfd */
+
+/* Box sizing rules */
+
+@font-face {
+  font-family: 'Matter';
+  src: url('./fonts/Matter-Bold.eot');
+  src:
+    local('Matter Bold'),
+    local('Matter-Bold'),
+    url('./fonts/Matter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Matter-Bold.woff2') format('woff2'),
+    url('./fonts/Matter-Bold.woff') format('woff'),
+    url('./fonts/Matter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url('./fonts/Matter-SemiBold.eot');
+  src:
+    local('Matter SemiBold'),
+    local('Matter-SemiBold'),
+    url('./fonts/Matter-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Matter-SemiBold.woff2') format('woff2'),
+    url('./fonts/Matter-SemiBold.woff') format('woff'),
+    url('./fonts/Matter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Matter';
+  src: url('./fonts/Matter-Medium.eot');
+  src:
+    local('Matter Medium'),
+    local('Matter-Medium'),
+    url('./fonts/Matter-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Matter-Medium.woff2') format('woff2'),
+    url('./fonts/Matter-Medium.woff') format('woff'),
+    url('./fonts/Matter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url('./fonts/Matter-Regular.eot');
+  src:
+    local('Matter Regular'),
+    local('Matter-Regular'),
+    url('./fonts/Matter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Matter-Regular.woff2') format('woff2'),
+    url('./fonts/Matter-Regular.woff') format('woff'),
+    url('./fonts/Matter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Matter';
+  font-weight: 600;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  /* Hide scrollbars */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a:visited {
+  text-decoration: none;
+  color: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+.MuiIconButton-root {
+  padding: 0px !important;
+}
+
+.PhoneInputCountry select {
+  background-color: white;
+  color: black;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+/* .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+} */
+
+/* For IE, Edge and Firefox */
+/* .scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(92, 92, 92, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+.checkbox-round {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox-round:checked {
+  background-color: #00a4e6;
+  border: #008ffd;
+}
+.challenge-table tr td,
+th {
+  padding: 8px 12px;
+  width: auto;
+  height: 20px;
+}
+.personal-info-save-btn {
+  opacity: 0.5;
+  width: 100%;
+  height: 48px;
+  /* Primary/Blue */
+  background: #6efdeb;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.personal-info-save-btn.complete {
+  opacity: 1;
+}
+
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: #008ffd;
+  border: 2px solid #008ffd;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.Frame-47856 {
+  width: 19.5px;
+  height: 19.5px;
+  flex-grow: 0;
+  padding: 4px 3.5px 3.5px 4px;
+  border-radius: 20px;
+  background-color: #1570ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+.pagination {
+  color: white;
+}
+.main {
+  /* display: flex; */
+  /* position: relative; */
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.ReactModal__Content {
+  overflow-y: scroll !important;
+  height: 100vh;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 32px;
+  width: 90%;
+}
+
+.modal-content .img-box {
+  width: 406px;
+  height: 260px;
+}
+
+.modal-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.preview-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  width: auto;
+  height: 228px;
+  padding: 12px 0;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 2px solid #d0d5dd;
+  border-radius: 12px;
+  position: relative;
+}
+
+.preview-box img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-container {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  background: transparent;
+}
+.slick-dots {
+  margin-bottom: 12px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+table th {
+  padding: 0px 12px;
+}
+
+table td {
+  padding: 0px 12px;
+}
+/* table td div {
+  min-width: 150px;
+}  */
+.metrix-table tr th {
+  border: 1px solid rgba(98, 98, 98, 0.16);
+}
+
+.metrix-table td {
+  font-weight: 400;
+}
+
+.table-heading {
+  background: #3b3c3d;
+}
+
+.table-heading th {
+  padding: 12px 24px;
+  color: #98a2b3;
+}
+
+.statistics div {
+  min-width: 140px;
+}
+.statistics2 div {
+  min-width: 140px;
+}
+.szh-accordion__item-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .statistics div {
+    min-width: 150px;
+  }
+  .statistics2 div {
+    min-width: 150px;
+  }
+  .challenge-table tr td,
+  th {
+    width: auto;
+    height: 60px;
+    padding: 8px 8px;
+  }
+}
+
+.invoice p {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+  .statistics div {
+    min-width: 150px;
+  }
+
+  table tr td,
+  th {
+    padding: 8px 4px;
+    font-size: 14px;
+    line-height: 1;
+  }
+  /* table td div {
+    min-width: 150px;
+  }  */
+  .challenge-table tr td,
+  th {
+    padding: 8px 4px;
+    font-size: 14px;
+    line-height: 1;
+    /* white-space: nowrap; */
+  }
+  .modal-content {
+    width: 100%;
+  }
+
+  .ReactModal__Content {
+    overflow-y: scroll !important;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-content .img-box {
+    width: auto !important;
+    height: 260px;
+  }
+}
+
+input.secondary {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+  font-weight: 400;
+}
+.bg-mainColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 253 235 / var(--tw-bg-opacity));
+}
+
+[type='text'],
+[type='email'],
+[type='url'],
+[type='password'],
+[type='number'],
+[type='date'],
+[type='datetime-local'],
+[type='month'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='week'],
+[multiple],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+  background-color: rgb(28 29 32 / var(--tw-bg-opacity));
+}
+.bg-mainBlue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 164 230 / var(--tw-bg-opacity));
+}
+
+iframe.skiptranslate {
+  visibility: hidden !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget select {
+  color: white !important;
+  padding: 8px;
+}
+
+.goog-te-gadget:nth-child(1) {
+  color: transparent !important;
+}
+
+#google_translate_element span {
+  display: none;
+}

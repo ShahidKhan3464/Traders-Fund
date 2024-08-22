@@ -1,0 +1,33 @@
+// src/store.js
+import { create } from 'zustand';
+
+export const useStore = create(set => ({
+  billingInfo: 0,
+  challenge: '',
+  challengeType: '',
+  setBillingInfo: info => set({ billingInfo: info }),
+  setChallengeName: info => set({ challenge: info }),
+  setChallengeType: info => set({ challengeType: info }),
+  docFront: '',
+  docBack: '',
+  selfie: '',
+  ocrData: {},
+  transparentSig: '',
+  userData: {},
+  userChallengesData: {},
+  selectedChallenge: '',
+  selectedChallengeId: '',
+  selectedPurchaseDetail: {},
+  reUploadDocument: false,
+  setReUploadDocument: reUploadDocument => set(() => ({ reUploadDocument: reUploadDocument })),
+  setDocFront: docFront => set(() => ({ docFront: docFront })),
+  setDocBack: docBack => set(() => ({ docBack: docBack })),
+  setSelfie: selfie => set(() => ({ selfie: selfie })),
+  setOcrData: ocrData => set(() => ({ ocrData: ocrData })),
+  setTransparentSig: transparentSig => set(() => ({ transparentSig: transparentSig })),
+  setUserData: userData => set(() => ({ userData: userData })),
+  setUserChallengesData: userChallengesData => set(() => ({ userChallengesData: userChallengesData })),
+  setSelectedChallenge: selectedChallenge => set(() => ({ selectedChallenge: selectedChallenge })),
+  setSelectedChallengeId: selectedChallengeId => set(() => ({ selectedChallengeId: selectedChallengeId })),
+  setSelectedPurchaseDetail: selectedPurchaseDetail => set(() => ({ selectedPurchaseDetail: selectedPurchaseDetail })),
+}));

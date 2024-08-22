@@ -1,0 +1,21 @@
+.header-acc {
+  border-radius: 6px;
+  padding: 2px 12px;
+  height: 48px;
+  cursor: pointer;
+  color: #26bd7e;
+  font-size: 16px;
+}
+
+.header-acc span {
+  background: white;
+}
+
+.header-active {
+  background: rgba(38, 189, 126, 0.2);
+  color: #26bd7e;
+}
+
+.header-active span {
+  background: #26bd7e;
+}
